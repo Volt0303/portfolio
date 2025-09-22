@@ -84,14 +84,14 @@ export function Projects() {
                   project.featured ? "lg:grid lg:grid-cols-2 lg:gap-8" : ""
                 }`}
               >
-                <div className={`relative overflow-hidden ${project.featured ? "lg:order-2" : ""}`}>
+                {/* <div className={`relative overflow-hidden ${project.featured ? "lg:order-2" : ""}`}>
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     className="w-full h-64 lg:h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
+                </div> */}
 
                 <div
                   className={`p-6 space-y-4 ${project.featured ? "lg:order-1 lg:flex lg:flex-col lg:justify-center" : ""}`}
