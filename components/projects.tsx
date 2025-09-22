@@ -6,16 +6,6 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description:
-      "A comprehensive e-commerce solution built with Next.js and Stripe integration. Features include product catalog, shopping cart, user authentication, and admin dashboard.",
-    image: "/modern-e-commerce-website-interface-with-clean-des.jpg",
-    technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "Tailwind CSS"],
-    github: "#",
-    live: "#",
-    featured: true,
-  },
-  {
     title: "Task Management App",
     description:
       "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
@@ -84,14 +74,14 @@ export function Projects() {
                   project.featured ? "lg:grid lg:grid-cols-2 lg:gap-8" : ""
                 }`}
               >
-                {/* <div className={`relative overflow-hidden ${project.featured ? "lg:order-2" : ""}`}>
+                <div className={`relative overflow-hidden ${project.featured ? "lg:order-2" : ""}`}>
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     className="w-full h-64 lg:h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div> */}
+                </div>
 
                 <div
                   className={`p-6 space-y-4 ${project.featured ? "lg:order-1 lg:flex lg:flex-col lg:justify-center" : ""}`}
